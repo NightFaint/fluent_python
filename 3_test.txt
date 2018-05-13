@@ -1,0 +1,15 @@
+
+I am learning about regex in Python and I have problems understanding the function groups().
+
+>>> m = re.match("([abc])+", "abc")
+Here I have defined the class [abc], which as I know, means any of the characters a to c. 
+It's defined inside a group and the + sign means we want at least one of such groups. 
+So I execute the following line and the result is understandable:
+
+>>> m.group()
+'abc'
+>>> m.group(0)
+'abc'
+I get why this happens.
+ The index of the main group is 0 and 'abc' matches the class we have defined. 
+So far so good, but I don't get why the following lines get executed the way they do:
