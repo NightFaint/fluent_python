@@ -1,5 +1,5 @@
 #no .idea/
 .idea/
-.xml
-.iml
-.pyc
+*.xml
+*.iml
+*.pyc
